@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Library 1</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,700italic,900,900italic");
+        @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+        /*#########################################################################################################################*/
+        /*Global Properties*/
+        /*#########################################################################################################################*/
+
+        /*22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+        /*Layout*/
+        /*22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width:80%;
+            margin:auto;
+            padding-top:20px;
+            padding-bottom:20px;
+            overflow:hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid-33{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr;
+        }
+        @media (max-width:1000px){
+            .grid-33{
+                grid-template-columns: repeat(2, minmax(100px, 1fr));
+                grid-template-rows:1fr 1fr 1fr;
+            }}
+        @media (max-width:600px){
+            .grid-33{
+                grid-template-columns: repeat(1, minmax(100px, 1fr));
+                grid-template-rows:1fr 1fr 1fr;
+            }}
+        .grid-cell {
+            height: 27.5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /*222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+        /*Colors*/
+        /*222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+        :root{
+            --color-1: rgba(255, 255, 255, 1);
+            --color-2: rgba(217, 217, 217, 1);
+            --color-3: rgba(179, 179, 179, 1);
+            --color-4: rgba(153, 153, 153, 1);
+            --color-5: rgba(128, 128, 128, 1);
+            --color-6: rgba(89, 89, 89, 1);
+            --color-7: rgba(51, 51, 51, 1);
+            --color-8: rgba(26, 26, 26, 1);
+            --color-9: rgba(0,0,0, 1);
+
+
+            /*Patch 2*/
+
+            --color-10: rgba(36, 37, 130, 1);
+            --color-11: rgba(86, 61, 103, 1);
+            --color-12: rgba(246,76,114,1);
+            --color-13: rgba(153,115,142,1);
+            --color-14: rgba(57, 57, 198,1);
+            --color-15: rgba(92, 57, 198, 1);
+            --color-16: rgba(163, 57, 198, 1);
+            --color-17: rgba(198, 57, 163, 1);
+            --color-18: rgba(249, 105, 14, 1);
+        }
+        /*333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+        /*Grid Background Colors*/
+        /*333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+
+        body .grid-cell.bgc-1 {
+            background: var(--color-1);
+        }
+        body .grid-cell.bgc-2 {
+            background: var(--color-2);
+        }
+        body .grid-cell.bgc-3 {
+            background: var(--color-3);
+        }
+        body .grid-cell.bgc-4 {
+            background: var(--color-4);
+        }
+        body .grid-cell.bgc-5 {
+            background: var(--color-5);
+        }
+        body .grid-cell.bgc-6 {
+            background: var(--color-6);
+        }
+        body .grid-cell.bgc-7 {
+            background: var(--color-7);
+        }
+        body .grid-cell.bgc-8 {
+            background: var(--color-8);
+        }
+        body .grid-cell.bgc-9 {
+            background: var(--color-9);
+        }
+
+        /*Patch 2*/
+
+        body .grid-cell.bgc-10 {
+            background: var(--color-10);
+        }
+        body .grid-cell.bgc-11 {
+            background: var(--color-11);
+        }
+        body .grid-cell.bgc-12 {
+            background: var(--color-12);
+        }
+        body .grid-cell.bgc-13 {
+            background: var(--color-13);
+        }
+        body .grid-cell.bgc-14 {
+            background: var(--color-14);
+        }
+        body .grid-cell.bgc-15 {
+            background: var(--color-15);
+        }
+        body .grid-cell.bgc-16 {
+            background: var(--color-16);
+        }
+        body .grid-cell.bgc-17 {
+            background: var(--color-17);
+        }
+        body .grid-cell.bgc-18 {
+            background: var(--color-18);
+        }
+
+        /*2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+        /*Headers*/
+        /*2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+
+        h1 {
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 600;
+            color: #000000;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 600;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Patch 1</h1>
+</div>
+<div class="grid-33">
+    <div class="grid-cell bgc-1">
+        <h2 style="color:black;">color-1</h2>
+    </div>
+    <div class="grid-cell bgc-2">
+        <h2>color-2</h2>
+    </div>
+    <div class="grid-cell bgc-3">
+        <h2>color-3</h2>
+    </div>
+    <div class="grid-cell bgc-4">
+        <h2>color-4</h2>
+    </div>
+    <div class="grid-cell bgc-5">
+        <h2>color-5</h2>
+    </div>
+    <div class="grid-cell bgc-6">
+        <h2>color-6</h2>
+    </div>
+    <div class="grid-cell bgc-7">
+        <h2>color-7</h2>
+    </div>
+    <div class="grid-cell bgc-8">
+        <h2>color-8</h2>
+    </div>
+    <div class="grid-cell bgc-9">
+        <h2>color-9</h2>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h1>Patch 2</h1>
+</div>
+<div class="grid-33">
+    <div class="grid-cell bgc-10">
+        <h2>color-10</h2>
+    </div>
+    <div class="grid-cell bgc-11">
+        <h2>color-11</h2>
+    </div>
+    <div class="grid-cell bgc-12">
+        <h2>color-12</h2>
+    </div>
+    <div class="grid-cell bgc-13">
+        <h2>color-13</h2>
+    </div>
+    <div class="grid-cell bgc-14">
+        <h2>color-14</h2>
+    </div>
+    <div class="grid-cell bgc-15">
+        <h2>color-15</h2>
+    </div>
+    <div class="grid-cell bgc-16">
+        <h2>color-16</h2>
+    </div>
+    <div class="grid-cell bgc-17">
+        <h2>color-17</h2>
+    </div>
+    <div class="grid-cell bgc-18">
+        <h2>color-18</h2>
+    </div>
+</div>
+
+
+<div class="container">
+    <h1>Patch 3</h1>
+</div>
+<div class="grid-33">
+    <div class="grid-cell bgc-10">
+        <h2>color-10</h2>
+    </div>
+    <div class="grid-cell bgc-11">
+        <h2>color-11</h2>
+    </div>
+    <div class="grid-cell bgc-12">
+        <h2>color-12</h2>
+    </div>
+    <div class="grid-cell bgc-13">
+        <h2>color-13</h2>
+    </div>
+    <div class="grid-cell bgc-14">
+        <h2>color-14</h2>
+    </div>
+    <div class="grid-cell bgc-15">
+        <h2>color-15</h2>
+    </div>
+    <div class="grid-cell bgc-16">
+        <h2>color-16</h2>
+    </div>
+    <div class="grid-cell bgc-17">
+        <h2>color-17</h2>
+    </div>
+    <div class="grid-cell bgc-18">
+        <h2>color-18</h2>
+    </div>
+</div>
+</body>
+</html>
